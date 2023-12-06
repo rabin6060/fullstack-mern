@@ -1,6 +1,7 @@
 import React from 'react'
 import About from './components/About'
 import Doctors from './components/Doctors'
+import Footer from './components/Footer'
 import Home from './components/Home'
 import Navbar from './components/Navbar'
 import Services from './components/Services'
@@ -23,6 +24,7 @@ export default function App() {
         <Doctors/>
       </div>
     </main>
+    <Footer/>
     </>
   )
 }
