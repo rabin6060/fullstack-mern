@@ -1,5 +1,6 @@
 import React from 'react'
 import About from './components/About'
+import Doctors from './components/Doctors'
 import Home from './components/Home'
 import Navbar from './components/Navbar'
 import Services from './components/Services'
@@ -17,6 +18,9 @@ export default function App() {
       </div>
       <div id='services'>
         <Services/>
+      </div>
+      <div id='doctors'>
+        <Doctors/>
       </div>
     </main>
     </>
