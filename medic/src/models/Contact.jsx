@@ -1,6 +1,7 @@
 import React from "react";
 
-export default function Contact() {
+export default function Contact({closeForm}) {
+
   return (
     <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-10">
       <div className="popup-form mt-12 absolute text-black ">
@@ -42,9 +43,9 @@ export default function Contact() {
               className="py-3 px-2 rounded-lg bg-[#d5f2ec]"
             />
           </div>
-          <div>
-            <button>Book Now</button>
-            <button className="bg-backGroundColor text-white p-5 rounded-lg active:bg-hoverColor">Close</button>
+          <div className="flex space-x-5">
+            <button className="px-5 py-3 bg-brightColor hover:bg-hoverColor transition duration-200 ease-in-out rounded-lg text-xl lg:text-lg text-white">Book Now</button>
+            <button className="bg-backGroundColor text-white text-xl lg:text-lg px-5 py-3 rounded-lg active:bg-hoverColor" onClick={closeForm}>Close</button>
           </div>
         </form>
       </div>
