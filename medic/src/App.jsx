@@ -1,5 +1,6 @@
 import React from 'react'
 import About from './components/About'
+import Booking from './components/Booking'
 import Doctors from './components/Doctors'
 import Footer from './components/Footer'
 import Home from './components/Home'
@@ -22,6 +23,9 @@ export default function App() {
       </div>
       <div id='doctors'>
         <Doctors/>
+      </div>
+      <div id='bookings'>
+        <Booking/>
       </div>
     </main>
     <Footer/>
