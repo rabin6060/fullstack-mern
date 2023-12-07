@@ -13,15 +13,18 @@ export default function Contact({closeForm}) {
   const handleSubmit =async (e)=>{
     e.preventDefault()
     try {
-      if(formData.length>0){
-        await fetch("/api/medic/newBooking",{
+      if(formData){
+        const response =await fetch("/api/medic/newBooking",{
           method:'POST',
           headers:{
             'Content-Type':'application/json'
           },
           body:JSON.stringify(formData)
         })
-        closeForm()
+        const data = await response.json()
+        if (data) {
+          closeForm()
+        }
       }
       
     } catch (error) {
