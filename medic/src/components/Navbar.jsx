@@ -68,13 +68,13 @@ const Navbar = () => {
               Doctors
             </Link>
             <Link
-              to="blog"
+              to="bookings"
               spy={true}
               smooth={true}
               duration={500}
               className="hover:text-hoverColor transition-all cursor-pointer"
             >
-              Blog
+              Bookings
             </Link>
           </nav>
           <div className="hidden lg:flex">
