@@ -6,6 +6,8 @@ dotenv.config();
 
 const app = express()
 
+app.use(express.json())
+
 const connect = () => {
      mongoose.connect(process.env.MONGO_URI)
     .then(() => {
@@ -25,7 +27,7 @@ app.get('/test',(req,res)=>{
     res.status(200).json("test successfull.")
 })
 
-app.use('/api/medic/',bookRoute)
+app.use('/api/medic',bookRoute)
 
 app.use((err,req,res,next)=>{
     const statusCode = err.statusCode || 500

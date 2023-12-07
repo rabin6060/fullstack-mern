@@ -3,6 +3,6 @@ import { createBooking } from '../controller/booking.controller.js';
 
 const router = express.Router()
 
-router.post('newBoooking',createBooking)
+router.post('/newBooking',createBooking)
 
 export default router
